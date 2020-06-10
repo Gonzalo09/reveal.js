@@ -1,38 +1,270 @@
-<!doctype html>
+﻿﻿<!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+	<title>Kotlin Grupo 2</title>
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css" id="theme">
+	<link rel="stylesheet" href="css/theme/league.css">
+	<link rel="stylesheet" href="?transition=convex#/transitions">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
+	<!-- Printing and PDF exports -->
+	<script>
 			var link = document.createElement( 'link' );
 			link.rel = 'stylesheet';
 			link.type = 'text/css';
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+	</script>
+</head>
+<body>
+<div class="reveal">
+	<div class="slides">
+		<!-- ESTA ES LA PRIMERA DIAPOSITIVA -->
+		<section>
+			<h1><font color="aqua">Kotlin</font></h1>
+			<h3>TP 1 - Objetos 2</h3>
+			<h3>UNAHUR</h3>
+		</section>
+		<section>
+			<section>
+				<h2>¿Que es?</h2>
+				<p>Kotlin es un lenguaje de programación pragmático pensado para funcionar con Máquina Virtual de Java (JVM) y Android. Además, puede ser compilado a código fuente de Javascript.</p>
+			</section>
+			<section>
+				<p>Se caracteriza por una perfecta combinación de características claramente orientadas a la funcionalidad durante la programación, centrándose en la seguridad, la claridad y la interoperabilidad.
+					Los programas en Kotlin pueden utilizar los frameworks y librerías de Java existentes.</p>
+			</section>
+		</section>
 
-		<script src="js/reveal.js"></script>
+		<section>
+			<section>
+				<h2>¿Por qué se llama así?</h2>
+				<p class="fragment"><a href="https://es.wikipedia.org/wiki/JetBrains" target="_blank">Jetbrains</a> reveló en 2011 y después de un año de desarrollo el proyecto como un nuevo proyecto para la JVM (Java Virtual Machine). Su equipo de programadores tenían base en San Petersbugo (Rusia) cerca de la isla de Kotlin y decidieron tomar su nombre</p>
+			</section>
+			<section>
+				<h2>¿Cómo surgió?</h2>
+				<p class="fragment">
+					La idea del lenguaje Kotlin surge en 2011, cuando los programadores de JetBrains buscaban sustituir
+					Java en los proyectos Android.
+				</p>
+				<p class="fragment">
+					Fue creado con la base de que fuese un lenguaje con las características
+					de Scala, pero sin la penalización del tiempo de compilación de éste.
+				</p>
+			</section>
 
-		<script>
+			<section>
+				<p>
+					En 2012 pasó a ser un proyecto de código abierto bajo Licencia Apache y en 2014 se publicó un directorio
+					de ejercicios para aprender este lenguaje. Finalmente, su primera versión estable, Kotlin 1.0, fue
+					lanzada el 15 de febrero de 2016.
+				</p>
+			</section>
+		</section>
+		<section>
+			<section>
+				<h3>VENTAJAS DE PROGRAMAR CON KOTLIN</h3>
+				<p>Para Android, la ventaja principal es que, aparte de sus memorables características y versatilidad
+					a la hora de programar, Google lo respalda, y eso dio pie a que Android Studio (creado también por
+					JetBrains) esté totalmente adaptado para usar Kotlin.</p>
+			</section>
+			<section>
+				<p>Facilita en gran medida la programación en Android, como demuestra su curva de aprendizaje,
+					mucho mejor que la de Scala. Existen múltiples recursos para aprender Kotlin, como los diferentes
+					<a href="https://kotlinlang.org/docs/tutorials/" target="_blank">tutoriales y recursos</a>
+					que nos brinda la propia web oficial.</p>
+			</section>
+			<section>
+				<p>
+					Otra ventaja que nos aporta Kotlin es que combina la Programación Orientada a Objetos con la
+					Programación Funcional. Esta última trabaja con funciones matemáticas como herramienta para la
+					solución del problema que se pretende resolver.
+				</p>
+			</section>
+			<section>
+				<p>
+					También podemos resaltar que es más conciso, puesto que reduce en gran medida la repetición de código,
+					con el ahorro de tiempo y recursos que ello conlleva. Al haber menos líneas de código, es más fácil de
+					leer y comprender. En consecuencia, es menos probable que se origine un error y, si se comete, es más
+					sencillo de detectar. Por todo ello también estamos hablando de un lenguaje más seguro.
+				</p>
+			</section>
+			<section>
+				<p>
+					Siguiendo con los errores, gracias a Kotlin podemos olvidarnos de los NullPointerException.
+					Estos se tratan de un tipo de error que surge cuando declaramos una variable sin haber creado
+					previamente el objeto que va asociado a ella. Posiblemente sea el error más frecuente en Java y
+					gracias a Kotlin puede verse reducido casi a cero.
+				</p>
+			</section>
+		</section>
+
+		<section>
+			<section>
+				<h1>Comparacion con Java</h1>
+			</section>
+
+			<section>
+				<h2>Clases</h2>
+				Para crear una clase en Kotlin usamos la palabra reservada <b><em>Class</em></b> al igual que los demás lenguajes,
+				pero en Kotlin las clases son publicas por defecto y no es necesario colocarlo a diferencia de Java.
+				<pre class="fragment fade-up">
+				<code class="hljs" data-trim>
+					//En java
+					Public Class Auto{
+					//codigo
+					}
+
+					//En Kotlin
+					Class Auto{
+					//codigo
+					}
+				</code>
+			</section>
+
+			<section>
+				<h2>Propiedades</h2>
+				<small>
+					Las propiedades en Kotlin son muy fáciles de definir, solo basta con especificar
+					si serán <b>mutable (var) o inmutables (val)</b>
+				</small>
+				<pre class="fragment fade-up">
+				<code class="hljs" data-trim>
+					//En java
+					public class Auto{
+						String marca;
+						String modelo;
+						int anio;
+					}
+					//En Kotlin
+					class Auto{
+						var marca: String = “”
+						var modelo: String = “”
+						var anio: int = 0
+					}
+				</code>
+			</section>
+
+			<section>
+				Las propiedades en Kotlin deben ser inicializadas con un valor por defecto
+				debido a que este nos generará su método getter y su setter de cada propiedad en en
+				caso de se mutable y en el caso de ser inmutable solo tendremos acceso a ella (getter)
+				pero no podemos modificarla mas adelante.
+			</section>
+
+			<section>
+				Su contraparte en Java seria definiendo las propiedades como privadas y generamos los
+				métodos getters y setters respectivos quedando de la siguiente forma.
+				<pre class="fragment fade-up">
+				<code class="hljs" data-trim>
+					//En java
+					public class Auto {
+						private String marca;
+						private String modelo;
+						private int año;
+						public String getMarca() {
+							 return marca;
+						}
+						public void setMarca(String marca) {
+							 this.marca = marca;
+						}
+						public String getModelo() {
+							 return modelo;
+						}
+						public void setModelo(String modelo) {
+							 this.modelo = modelo;
+						}
+						public int getAnio() {
+							 return anio;
+					   	}
+						public void setAnio(int anio) {
+							 this.anio = anio;
+					   }
+					}
+				</code>
+			</section>
+
+			<section>
+				<h2>Metodos</h2>
+				En Kotlin para definir un método usamos la palabra reservada <b><em>fun</em></b> y la definimos como una función.
+				<pre class="fragment fade-up">
+				<code class="hljs" data-trim>
+					//En Java
+					public class Auto {
+						public boolean esReciente(){
+							return this.anio >= 2018
+					   }
+					}
+					//En Kotlin
+					class Auto{
+						fun esReciente(): Boolean {
+							return this.anio >= 2018
+						}
+					// O podemos usar
+						fun esReciente() = this.anio >= 2018
+					}
+				</code>
+			</section>
+
+			<section>
+				<h2>Constructores</h2>
+					En java usamos un método public con el nombre de la clase:
+				<pre class="fragment fade-up">
+				<code class="hljs" data-trim>
+					public class Auto {
+						public Auto(String marca, String modelo, int anio) {
+							this.marca = marca;
+							this.modelo = modelo;
+							this.anio = anio;
+						}
+					   	//Getters y Setters
+					}
+				</code>
+			</section>
+
+			<section>
+				En Kotlin el constructor se define con la palabra reservada <b><em>constructor</em></b> y
+				se define justo después del nombre de la clase.
+				<pre class="fragment fade-up">
+				<code class="hljs" data-trim>
+					class Auto constructor(marca: String, modelo: String, anio: int){
+						val marca: String = marca //Asignamos el valor recibido por el constructor
+						val modelo: String = modelo //Al ser inmutable solo nos generara el getter.
+						var anio: int = anio //Esta propiedad tendrá su getter y setter
+					}
+				</code>
+			</section>
+
+			<section>
+				Si el constructor primario (se pueden tener varios constructores) es publico se puede omitir la
+				palabra reservada constructor del método constructor primario, y si dentro de los argumentos
+				del constructor definimos si declaramos que sean propiedades podemos omitir las mismas dentro
+				del cuerpo de la clase. Dejando nuestra clase de la siguiente forma:
+				<pre class="fragment fade-up">
+				<code class="hljs" data-trim>
+					class Auto (marca: String, modelo: String, anio: int){
+						//Ya no hay necesidad de definir nuevamente las propiedades
+						fun esReciente() = this.anio >= 2018
+					}
+				</code>
+			</section>
+
+		</section>
+
+	</div>
+</div>
+
+<script src="js/reveal.js"></script>
+
+<script>
 			// More info about config & dependencies:
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
@@ -46,5 +278,6 @@
 				]
 			});
 		</script>
-	</body>
+</body>
+</html>
 </html>
